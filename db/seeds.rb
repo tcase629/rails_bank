@@ -1,7 +1,8 @@
 @accounts = ["Savings", "Checkings", "College"]
 @bals = [400.00, 300.00, 200.00]
+
 5.times do |i|
-  emailStr = "{Faker::Science.element}#{i}@mail.com"
+  emailStr = "#{Faker::Science.element}#{i}@mail.com"
   user = User.create(
     email: emailStr,
     password: "password",
